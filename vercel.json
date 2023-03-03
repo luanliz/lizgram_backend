@@ -2,10 +2,12 @@
   "name": "lizgram-in-vercel",
   "version": 2,
   "public": true,
-  "build": {
-    "src": "./app.js",
-    "use": "@vercel/node"
-  },
+  "build": [
+    {
+      "src": "./app.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
